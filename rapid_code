@@ -1,0 +1,16 @@
+MODULE Module1
+        CONST robtarget Home:=[[364.353829072,0,594],[0.5,0,0.866025404,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10:=[[364.353818292,0,320.773651685],[0.50000002,0,0.866025392,0],[0,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[523.708706748,0,320.77366087],[0.500000013,0,0.866025396,0],[0,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[523.708714576,0,602.300965187],[0.499999994,0,0.866025407,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    PROC main()
+        Path_10;
+    ENDPROC
+    PROC Path_10()
+        MoveJ Home,v100,fine,tool0\WObj:=wobj0;
+        MoveJ Target_10,v100,fine,tool0\WObj:=wobj0;
+        MoveJ Target_20,v100,fine,tool0\WObj:=wobj0;
+        MoveJ Target_30,v100,fine,tool0\WObj:=wobj0;
+        MoveJ Home,v100,fine,tool0\WObj:=wobj0;
+    ENDPROC
+ENDMODULE
