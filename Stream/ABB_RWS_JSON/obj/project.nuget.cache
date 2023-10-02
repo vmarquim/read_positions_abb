@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g2Qgn9Ux5JHyEG4543yq7zkCrKUfeTIJstLLiB+wuR0ZZ5VQ6cQsEt8GW9XhsVIGFbFm3F3y757Z4sT9mk3dLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\caldas\\Documents\\ABB_Robot_Data_Processing\\ABB_Robot_data_processing\\Stream\\ABB_RWS_JSON\\ABB_RWS_JSON.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caldas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

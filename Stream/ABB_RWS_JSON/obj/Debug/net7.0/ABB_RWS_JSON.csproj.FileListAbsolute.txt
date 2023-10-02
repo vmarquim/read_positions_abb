@@ -1,0 +1,17 @@
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.AssemblyInfoInputs.cache
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.AssemblyInfo.cs
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.csproj.CoreCompileInputs.cache
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\ABB_RWS_JSON.exe
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\ABB_RWS_JSON.deps.json
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\ABB_RWS_JSON.runtimeconfig.json
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\ABB_RWS_JSON.dll
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\ABB_RWS_JSON.pdb
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.csproj.AssemblyReference.cache
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.csproj.CopyComplete
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.dll
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\refint\ABB_RWS_JSON.dll
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.pdb
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ABB_RWS_JSON.genruntimeconfig.cache
+C:\Users\caldas\Documents\ABB_Robot_Data_Processing\ABB_Robot_data_processing\Stream\ABB_RWS_JSON\obj\Debug\net7.0\ref\ABB_RWS_JSON.dll

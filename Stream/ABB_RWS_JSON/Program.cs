@@ -29,6 +29,9 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Diagnostics;
+using System.Text;
+
+using Newtonsoft.Json;
 
 namespace ABB_RWS_Data_Processing_JSON
 {
@@ -48,6 +51,9 @@ namespace ABB_RWS_Data_Processing_JSON
         public static double[] C_Position = new double[3];
         //  Orientation {Quaternion} (-):
         public static double[] C_Orientation = new double[4];
+        
+        //  Write to CSV -- Before the loop:
+        public static StringBuilder csv = new StringBuilder();
     }
 
     class Program
@@ -150,6 +156,17 @@ namespace ABB_RWS_Data_Processing_JSON
                                         ABB_Stream_Data.J_Orientation[3] = (double)service.j4;
                                         ABB_Stream_Data.J_Orientation[4] = (double)service.j5;
                                         ABB_Stream_Data.J_Orientation[5] = (double)service.j6;
+
+                                        var newLine = string.Format(
+                                            "{0}; {1}; {2}; {3}; {4}; {5};", 
+                                            ABB_Stream_Data.J_Orientation[0],
+                                            ABB_Stream_Data.J_Orientation[1],
+                                            ABB_Stream_Data.J_Orientation[2],
+                                            ABB_Stream_Data.J_Orientation[3],
+                                            ABB_Stream_Data.J_Orientation[4],
+                                            ABB_Stream_Data.J_Orientation[5]
+                                        );
+                                        ABB_Stream_Data.csv.AppendLine(newLine);
                                     }
                                     else if (ABB_Stream_Data.json_target == "robtarget")
                                     {
@@ -162,7 +179,19 @@ namespace ABB_RWS_Data_Processing_JSON
                                         ABB_Stream_Data.C_Orientation[1] = (double)service.q2;
                                         ABB_Stream_Data.C_Orientation[2] = (double)service.q3;
                                         ABB_Stream_Data.C_Orientation[3] = (double)service.q4;
-                                    }
+
+                                        var newLine = string.Format(
+                                            "{0}; {1}; {2}; {3}; {4}; {5}; {6};", 
+                                            ABB_Stream_Data.C_Position[0], 
+                                            ABB_Stream_Data.C_Position[1],
+                                            ABB_Stream_Data.C_Position[2], 
+                                            ABB_Stream_Data.C_Orientation[0], 
+                                            ABB_Stream_Data.C_Orientation[1], 
+                                            ABB_Stream_Data.C_Orientation[2], 
+                                            ABB_Stream_Data.C_Orientation[3]
+                                        );
+                                        ABB_Stream_Data.csv.AppendLine(newLine);
+                                    }                            
                                 }
                                 catch (Exception e)
                                 {
@@ -190,7 +219,6 @@ namespace ABB_RWS_Data_Processing_JSON
                 Console.WriteLine("Communication Problem: {0}", e);
             }
         }
-
         public void Start()
         {
             exit_thread = false;
@@ -210,6 +238,9 @@ namespace ABB_RWS_Data_Processing_JSON
             // Stop a thread (Robot Web Services communication)
             Stop();
             Thread.Sleep(100);
+            //after your loop
+            string filePath = "./testdata/data.csv";
+            File.WriteAllText(filePath, ABB_Stream_Data.csv.ToString());
         }
     }
 }
